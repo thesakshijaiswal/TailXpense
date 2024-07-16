@@ -5,27 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DigiWallet</title>
   <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-color-primary text-color-white tracking-wider">
   <header>
     <nav class="container flex justify-between items-center">
-      <div class="w-20 py-5 text-color-secondary font-bold text-3xl">
+      <div class="w-20 py-5 text-color-secondary font-bold text-3xl select-none">
         <a href="#home">
           <span class="text-color-white">Digi</span>Wallet.
         </a>
       </div>
       <div>
-        <ul class="flex items-center space-x-6">
+        <ul class="lg:flex items-center space-x-6 hidden">
+          <li><a id="nav-link" href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+          <li><a id="nav-link" href="#features" class="hover:text-color-secondary ease-in duration-200">Features</a></li>
+          <li><a id="nav-link" href="#testimonials" class="hover:text-color-secondary ease-in duration-200">Testimonials</a></li>
+          <li><a id="nav-link" href="pricing" class="hover:text-color-secondary ease-in duration-200">Pricing</a></li>
+          <li><a id="nav-link" href="blog" class="hover:text-color-secondary ease-in duration-200">Blogs</a></li>
+          <li><a id="nav-link" href="contact" class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
+          <li><button class="bg-color-secondary px-9 py-3 rounded-md capitalize font-semibold hover:opacity-70 ease-in duration-200">Free Trial</button></li>
+        </ul>
+      </div>
+      <!--Small Screen-->
+      <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div id="menu" class="hidden backdrop-blur-sm bg-colors-primary-dark/10 h-[50vh] w-[50%] absolute top-0 right-0">
+        <ul class="h-full grid place-items-center py-20">
           <li><a href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
           <li><a href="#features" class="hover:text-color-secondary ease-in duration-200">Features</a></li>
           <li><a href="#testimonials" class="hover:text-color-secondary ease-in duration-200">Testimonials</a></li>
-          <li><a href="pricing" class="hover:text-color-secondary ease-in duration-200">Pricing</a></li>
-          <li><a href="blog" class="hover:text-color-secondary ease-in duration-200">Blogs</a></li>
-          <li><a href="contact" class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
+          <li><a href="#pricing" class="hover:text-color-secondary ease-in duration-200">Pricing</a></li>
+          <li><a href="#blog" class="hover:text-color-secondary ease-in duration-200">Blogs</a></li>
+          <li><a href="#contact" class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
           <li><button class="bg-color-secondary px-9 py-3 rounded-md capitalize font-semibold hover:opacity-70 ease-in duration-200">Free Trial</button></li>
         </ul>
       </div>
     </nav>
   </header>
+  <script src="index.js"></script>
 </body>
 </html>                                   
