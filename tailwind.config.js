@@ -13,6 +13,9 @@ module.exports = {
         "color-blob":"#A427DF"
       }
     },
+    container:{
+      center: true
+    }
   },
   plugins: [],
 }
