@@ -922,28 +922,8 @@ video {
 }
 
 @media (min-width: 250px) {
-  .exs\:w-\[\] {
-    width: ;
-  }
-
-  .exs\:w-\[100\] {
-    width: 100;
-  }
-
   .exs\:w-\[100\%\] {
     width: 100%;
-  }
-
-  .exs\:gap-10 {
-    gap: 2.5rem;
-  }
-
-  .exs\:gap-4 {
-    gap: 1rem;
-  }
-
-  .exs\:gap-3 {
-    gap: 0.75rem;
   }
 }
 
@@ -969,6 +949,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:ml-20 {
+    margin-left: 5rem;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -992,6 +976,10 @@ video {
 
   .md\:pr-10 {
     padding-right: 2.5rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 }
 
