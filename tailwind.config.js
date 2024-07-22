@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
@@ -12,6 +14,11 @@ module.exports = {
         "color-gray":"#333",
         "color-blob":"#A427DF"
       }
+    },
+    screens: {
+      'xs': '475px',
+      'exs': '250px',
+      ...defaultTheme.screens,
     },
     container: {
       center: true,
