@@ -17,14 +17,16 @@ module.exports = {
     },
     screens: {
       'xs': '475px',
-      'exs': '250px',
+      'exs': '240px',
       ...defaultTheme.screens,
     },
     container: {
       center: true,
       padding:{
-      DEFAULT: "15px",
-      md: "50px"
+      exs:"10px",
+      sm:"30px",
+      lg:"50px",
+      md:"5px"
       }
     }
   },

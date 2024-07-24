@@ -18,7 +18,7 @@
         </a>
       </div>
       <div>
-        <ul class="lg:flex items-center space-x-6 hidden">
+        <ul class="lg:flex md:flex items-center space-x-6 hidden">
           <li><a id="nav-link" href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
           <li><a id="nav-link" href="#features" class="hover:text-color-secondary ease-in duration-200">Features</a></li>
           <li><a id="nav-link" href="#testimonials" class="hover:text-color-secondary ease-in duration-200">Testimonials</a></li>
@@ -29,7 +29,7 @@
         </ul>
       </div>
       <!--Small Screen-->
-      <div id="hamburger" class="lg:hidden cursor-pointer z-50" role="dialog">
+      <div id="hamburger" class="lg:hidden md:hidden cursor-pointer z-50" role="dialog">
         <i class="fa-solid fa-bars"></i>
       </div>
       <div id="menu" class="lg:hidden hidden backdrop-blur-sm bg-color-primary-dark/30 h-[50vh] md:w-[50%] absolute top-0 right-0 z-40 sm:w-[100%] xs:w-[100%] exs:w-[100%]">
@@ -152,6 +152,25 @@
           </div>
         </div>
       </div>
+    </section>
+    
+    <section id="testimonial">
+      <div class="container py-20">
+        <div class="text-center m-auto mb-20 md:w-1/2">
+          <h4 class="text-color-secondary font-bold mb-4">User Review</h4>
+          <h1 class="title-primary">What Clients Say About Our App After Using It</h1>
+        </div>
+        <!--Review Container-->
+        <div class="mt-8">
+          <div class="flex items-center justify-between flex-wrap">
+            <img src="./assets/user1.png" alt="user" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic">
+            <img src="./assets/user1.png" alt="user" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer">
+            <img src="./assets/user1.png" alt="user" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer">
+            <img src="./assets/user1.png" alt="user" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer">
+            <img src="./assets/user1.png" alt="user" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer">
+          </div>
+          </div>
+        </div>
     </section>
   </main>
   <script src="./index.js"></script>
