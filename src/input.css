@@ -18,4 +18,13 @@
     .blob-orange{
         @apply w-80 h-80 bg-color-secondary absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 rounded-full overflow-hidden lg:bottom-10 lg:right-32 lg:w-96 lg:h-96 lg:opacity-30;
     }
+    .user-pic.active-pic{
+        border: 2px solid #ff7d3b;
+    }
+    .user-text{
+        display: none;
+    }
+    .user-text.active-text{
+        display: block;
+    }
 }
