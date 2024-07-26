@@ -26,5 +26,31 @@
     }
     .user-text.active-text{
         display: block;
+        animation: moveup 1s linear forwards;
+    }
+    @keyframes moveup {
+        0%{
+            margin-top: 40px;
+            opacity: 0;
+        }
+        50%{
+            margin-top: 20px;
+            opacity: 0.1;
+        }
+        100%{
+            margin-top: 0px;
+            opacity: 1;
+        }
+    }
+
+    .card{
+        perspective: 1000px;
+    }
+    .front, .back{
+        backface-visibility: hidden;
+        transition: all 0.4s ease;
+    }
+    .front{
+        overflow: hidden;
     }
 }
