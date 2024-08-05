@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" content="TailXpense:The Ultimate Expense Tracking Application">
+  <meta name="title" content="TailXpense: The Ultimate Expense Tracking Application">
   <meta name="robots" content="noindex,follow"/>
   <meta name="author" content="Sakshi Jaiswal">
-  <meta name="description" content="Discover TailXpense, the ultimate app for tracking your expenses. Stay organized and save money! Download today for a better financial future.">
-  <title>TailXpense:The Ultimate Expense Tracking Application</title>
+  <meta name="description" content="Discover TailXpense, the one stop solution for tracking your expenses. Stay organized and save money! Download today for a better financial future.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/logo.png">
+  <title>TailXpense: The Ultimate Expense Tracking Application</title>
   <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  <script defer src="./index.js"></script>
 </head>
 <body class="bg-color-primary text-color-white tracking-wider select-none">
   <header class="sticky top-0 z-50">
     <nav class="flex justify-between items-center md:mx-8 exs:mx-2">
       <div class="w-20 py-5 text-color-secondary font-bold text-3xl">
         <a href="#home" class="flex items-center">
-          <img src="./assets/logo.png" alt="logo" class="lg:w-16 md:w-14 -mr-2 exs:w-12">
+          <img src="./assets/logo.png" alt="logo" class="lg:w-16 md:w-14 -mr-2 exs:w-12" loading="lazy">
           <span class="text-color-white">Tail</span>Xpense
         </a>
       </div>
@@ -62,7 +65,7 @@
             <button class="btn-primary">Download App</button>
           </div>
           <div class="md:w-1/2 grid place-items-center">
-            <img src="./assets/home-banner.png" alt="card illustration">
+            <img src="./assets/home-banner.png" alt="card illustration" loading="lazy">
           </div>
         </div>
       </div>
@@ -110,7 +113,7 @@
 
         <div class="flex flex-col items-center justify-between lg:flex-row">
           <div class="mb-12 lg:w-1/2">
-            <img src="./assets/save-money.png" alt="save money">
+            <img src="./assets/save-money.png" alt="save money" loading="lazy">
           </div>
           <div class="text-center md:text-left exs:text-left lg:w-1/2 md:ml-20">
             <h4 class="text-color-secondary font-bold mb-4">Saving Money</h4>
@@ -215,7 +218,7 @@
               <p>Bill Monthly</p>
               <label class="cursor-pointer relative inline-block w-20 h-8 rounded-full overflow-hidden">
                 <input type="checkbox" id="toggleBtn" class="peer opacity-0 w-0 h-0">
-                <span class="absolute inset-0 bg-color-primary-light border border-solid border-color-gray rounded-full duration-300 before:content-[''] before:absolute before:w-6 before:h-6 before:bottom-1 before:left-1 before:bg-color-white before:rounded-full before:duration-300 peer-checked:before:translate-x-12 peer-checked:bg-color-secondary exs:peer-checked:before:translate-x-9"></span>
+                <span class="absolute inset-0 bg-color-primary-light border border-solid border-color-gray rounded-full duration-300 before:content-[''] before:absolute before:w-6 before:h-6 before:bottom-1 before:left-1 before:bg-color-white before:rounded-full before:duration-300 peer-checked:before:translate-x-12 peer-checked:bg-color-secondary exs:peer-checked:before:translate-x-9 md:peer-checked:before:translate-x-12"></span>
               </label>
               <p>Bill Anually</p>
             </div>
@@ -424,7 +427,7 @@
           <!--card:01-->
           <div>
             <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
-              <img src="./assets/blog-banner-1.jpg" alt="Blue-monday-mood" class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out">
+              <img src="./assets/blog-banner-1.jpg" alt="Blue-monday-mood" class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out" loading="lazy">
             </div>
             <div class="flex items-center gap-5 py-5">
               <p>20 July 2024</p>
@@ -439,7 +442,7 @@
           <!--card:02-->
           <div>
             <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
-              <img src="./assets/blog-banner-2.jpg" alt="Blue-monday-mood" class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out">
+              <img src="./assets/blog-banner-2.jpg" alt="Blue-monday-mood" class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out" loading="lazy">
             </div>
             <div class="flex items-center gap-5 py-5">
               <p>28 July 2024</p>
@@ -454,7 +457,7 @@
           <!--card:03-->
           <div>
             <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
-              <img src="./assets/blog-banner-3.jpg" alt="Blue-monday-mood" class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out">
+              <img src="./assets/blog-banner-3.jpg" alt="Blue-monday-mood" class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out" loading="lazy">
             </div>
             <div class="flex items-center gap-5 py-5">
               <p>20 August 2024</p>
@@ -467,9 +470,10 @@
                 <span class="tracking-wider capitalize underline hover:no-underline">Read more</span>
               </a>
           </div>
+          <!--card:04-->
           <div class="lg:hidden">
             <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
-              <img src="./assets/blog-banner-4.jpg" alt="Blue-monday-mood" class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out">
+              <img src="./assets/blog-banner-4.jpg" alt="Blue-monday-mood" class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out" loading="lazy">
             </div>
             <div class="flex items-center gap-5 py-5">
               <p>25 August 2024</p>
@@ -493,10 +497,10 @@
           <p class="leading-relaxed pt-5">Serving an impressive list of long-term money with experience and expertise in multiple industries.</p>
           <div class="flex flex-col md:flex-row items-center justify-center gap-5 pt-10">
             <a href="#" class="bg-color-white h-14 w-44 grid place-items-center rounded-lg hover:opacity-70">
-              <img src="./assets/app-store.png" alt="App-store">
+              <img src="./assets/app-store.png" alt="App-store" loading="lazy">
             </a>
             <a href="#" class="bg-color-white h-14 w-44 grid place-items-center rounded-lg hover:opacity-70">
-              <img src="./assets/play-store.png" alt="Play-store">
+              <img src="./assets/play-store.png" alt="Play-store" loading="lazy">
             </a>
           </div>
         </div>
@@ -585,7 +589,6 @@
       </div>
     </section>
   </main>
-  <script src="./index.js"></script>
 </body>
 </html>                                   
 
