@@ -13,14 +13,33 @@ window.onscroll = () => {
 
 //Samll Screen Menu
 
-const hamburger = document.querySelector("#hamburger");
-const menu = document.querySelector("#menu");
-const navLink = document.querySelector("#nav-link");
-const menuBtn = document.querySelector(".fa-solid");
+document.addEventListener('DOMContentLoaded', (event) => {
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('menu');
+  const menuBtn = document.querySelector(".fa-solid");
+  const navLink = document.querySelector("#nav-link");
 
-hamburger.addEventListener("click", ()=>{
-    menu.classList.toggle("hidden");
+  // Toggle menu visibility when hamburger is clicked
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
     menuBtn.classList.toggle("fa-xmark");
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+      menu.classList.add('hidden');
+      menuBtn.classList.add("fa-bar");
+      menuBtn.classList.remove("fa-xmark");
+    }
+  });
+  document.addEventListener('click', (e) => {
+    if (!navLink.contains(e.target) && !hamburger.contains(e.target)) {
+      menu.classList.add('hidden');
+      menuBtn.classList.add("fa-bar");
+      menuBtn.classList.remove("fa-xmark");
+    }
+  });
 });
 
 //Testimonial
