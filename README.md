@@ -37,3 +37,8 @@ To Install and run this project locally, one must follow all the steps mentioned
 - A card flip on hitting the rounded switch for showcasing the bill payment and service offered monthly and annually.
 - A beautifully structured sitemap at the bottom of the website and eye catching grid of blogs written.
 - A live preview of website on sharing the link.
+
+## Preview:
+
+https://github.com/user-attachments/assets/bed27bb0-b84a-4856-99ec-3e07dfa13cb4
+
