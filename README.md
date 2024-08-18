@@ -10,7 +10,7 @@
 
 Check out the deployed website by hitting the link below :
 
-        https://tail-xpense.vercel.app/
+https://tail-xpense.vercel.app/
 
 ## How to install and run:
 
